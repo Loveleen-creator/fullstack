@@ -74,7 +74,29 @@
 </head>
 
 <body>
+    
+</style>
+</head>
+<body>
+    <nav style="background: #f4f4f4; padding: 15px; border-bottom: 2px solid #ccc; margin-bottom: 20px; font-family: Arial, sans-serif;">
+        <strong>My Experiments:</strong>
+        <a href="index.html" style="margin-right: 15px; color: blue; text-decoration: none;">Experiment 1 (Home)</a>
+        <a href="exp2.html" style="margin-right: 15px; color: blue; text-decoration: none;">Experiment 2</a>
+        <a href="exp3.html" style="color: blue; text-decoration: none;">Experiment 3</a>
+    </nav>
 
+    <div class="bank-container">
+    ```
+
+### 3. Repeat for other files
+Once you save (Commit) this change in `index.html`, do the exact same thing for `exp2.html` and `exp3.html`. This ensures you can navigate between all three files from any page.
+
+### 4. Important Tip for your Layout
+Because your CSS uses `display: flex;` and `height: 100vh;` on the `body` (visible in your screenshot), the menu might look a bit squashed or centered in the middle of the screen. 
+
+**To fix that:** Change your `body` style in the CSS from `justify-content: center;` to `flex-direction: column; align-items: center;`. This will put the menu at the top and your "Banking Interface" right below it.
+
+Would you like me to show you how to adjust that CSS so the menu stays perfectly at the top?
 <div class="bank-container">
     <h2>Bank Account</h2>
 
@@ -140,3 +162,4 @@
 </script>
 </body>
 </html>
+
